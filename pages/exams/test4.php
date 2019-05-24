@@ -7,7 +7,7 @@
 // CODE HERE
 function bubbleSort(array $arr)
 {
-  $n = sizeof($arr);
+  $n = sort($arr);
   for ($i = 1; $i < $n; $i++) {
       $flag = false;
       for ($j = $n - 1; $j >= $n; $j--) {
@@ -18,6 +18,7 @@ function bubbleSort(array $arr)
               $flag = true;
           }
       }
+
       if (!$flag) {
           break;
       }

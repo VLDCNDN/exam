@@ -18,8 +18,8 @@
   }
 
   #chessboard tr td {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
   }
 
   #chessboard tr:nth-child(2n) td:nth-child(2n+1) {
@@ -36,18 +36,19 @@
 <?php echo "Fix this"; ?>
 <table id='chessboard'>
   <?php
+        
+        for ($r = 1; $r <= 8; $r++) {
+            $col = "";
+			$cols = 1;
+            for ($c = 1; $c <= 8; $c++) {
+                $col .= "<td></td>";
+                $cols++;
 
-    for ($r = 0; $r <= 8; $r++) {
-        $col = "";
-        for ($c = 1; $c < 8; $c++) {
-            $col .= "<td></td>";
+            }
 
-            echo $col;
+            echo "<tr>".$col."</tr>";
 
         }
-
-    }
-
-  ?>
+      ?>
 
 </table>
