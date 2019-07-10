@@ -75,6 +75,9 @@
 
   } else if ($test_id == 5) {
 
+    $page_header = "Sample Code";
+    $content = "Show your sample code.";
+
   }
 
   $panel_content = $content;
